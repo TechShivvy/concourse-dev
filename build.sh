@@ -12,9 +12,9 @@ else
 fi
 
 # Append metadata to the file
-echo "Job Name: $BUILD_JOB_NAME" >> build_status/build_status.txt
-echo "Pipeline Name: $BUILD_PIPELINE_NAME" >> build_status/build_status.txt
-echo "Created By: $BUILD_CREATED_BY" >> build_status/build_status.txt
+echo "Job Name: \$BUILD_JOB_NAME" >> build_status/build_status.txt
+echo "Pipeline Name: \$BUILD_PIPELINE_NAME" >> build_status/build_status.txt
+echo "Created By: \$BUILD_CREATED_BY" >> build_status/build_status.txt
 
 # docker tag image "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_TAG"
 # docker push "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_TAG"
