@@ -3,3 +3,5 @@ Pipeline Name:
 Created By: 
 Created By: $BUILD_CREATED_BY
 Job Name: $BUILD_JOB_NAME
+
+# ATC_EXTERNAL_URL/teams/BUILD_TEAM_NAME/pipelines/BUILD_PIPELINE_NAME/jobs/BUILD_JOB_NAME/builds/BUILD_NAME
