@@ -12,14 +12,14 @@ else
 fi
 
 # Append metadata to the file
-echo "BUILD_ID=$BUILD_ID" >> build_status/build_status.txt
-echo "BUILD_NAME=$BUILD_NAME" >> build_status/build_status.txt
-echo "BUILD_JOB_NAME=$BUILD_JOB_NAME" >> build_status/build_status.txt
-echo "BUILD_PIPELINE_NAME=$BUILD_PIPELINE_NAME" >> build_status/build_status.txt
-echo "BUILD_PIPELINE_INSTANCE_VARS=$BUILD_PIPELINE_INSTANCE_VARS" >> build_status/build_status.txt
-echo "BUILD_TEAM_NAME=$BUILD_TEAM_NAME" >> build_status/build_status.txt
-echo "BUILD_CREATED_BY=$BUILD_CREATED_BY" >> build_status/build_status.txt
-echo "ATC_EXTERNAL_URL=$ATC_EXTERNAL_URL" >> build_status/build_status.txt
+echo "BUILD_ID=\$BUILD_ID" >> build_status/build_status.txt
+echo "BUILD_NAME=\$BUILD_NAME" >> build_status/build_status.txt
+echo "BUILD_JOB_NAME=\$BUILD_JOB_NAME" >> build_status/build_status.txt
+echo "BUILD_PIPELINE_NAME=\$BUILD_PIPELINE_NAME" >> build_status/build_status.txt
+echo "BUILD_PIPELINE_INSTANCE_VARS=\$BUILD_PIPELINE_INSTANCE_VARS" >> build_status/build_status.txt
+echo "BUILD_TEAM_NAME=\$BUILD_TEAM_NAME" >> build_status/build_status.txt
+echo "BUILD_CREATED_BY=\$BUILD_CREATED_BY" >> build_status/build_status.txt
+echo "ATC_EXTERNAL_URL=\$ATC_EXTERNAL_URL" >> build_status/build_status.txt
 
 
 # docker tag image "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_NAME:$IMAGE_TAG"
