@@ -2,3 +2,6 @@ Job Name:
 Pipeline Name: 
 Created By: 
 Created By: $BUILD_CREATED_BY
+Job Name: $BUILD_JOB_NAME
+Pipeline Name: $BUILD_PIPELINE_NAME
+Created By: $BUILD_CREATED_BY
